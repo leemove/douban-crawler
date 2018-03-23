@@ -1,0 +1,13 @@
+{
+  "name": "douban-crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "leemove <923522454@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "phantom": "^4.0.12",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
