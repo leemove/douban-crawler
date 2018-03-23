@@ -21,7 +21,7 @@ const House = mongoose.model('House', houseSchema)
 
 let pageCount = 0
 let saveCount = 0
-const maxPage = 1
+const maxPage = 10
 async function main(){
 // 抓取的页面数
   const pageStarts = _.range(maxPage).map(item => item *25)
@@ -51,6 +51,7 @@ async function saveData (content) {
       const house = new House({title, link: herf, updateTime: time})
       house.save(function () {
         saveCount++
+        console.log(`本次抓取已保存${saveCount}条数据`)
         if (saveCount === maxPage) {
           mongoose.disconnect()
         }
