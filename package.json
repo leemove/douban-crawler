@@ -5,7 +5,9 @@
   "author": "leemove <923522454@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.5",
+    "mongoose": "^5.0.11",
     "phantom": "^4.0.12",
     "request": "^2.85.0",
     "request-promise-native": "^1.0.5"
